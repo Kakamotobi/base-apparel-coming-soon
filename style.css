@@ -77,13 +77,15 @@ h1 span {
 }
 
 /* -----Form----- */
-.innerWrapper {
+.formWrapper {
     margin-bottom: 50px;
+    position: relative;
 }
-.emailSubForm {
+.emailSubWrapper {
     width: 310px;
     height: 48px;
     margin-bottom: 10px;
+    position: relative;
 }
 .emailSubInput {
     width: inherit;
@@ -103,7 +105,8 @@ h1 span {
     border: none;
     border-radius: 50px;
     position: absolute;
-    transform: translateX(-65px);
+    top: 0;
+    right: 0;
     cursor: pointer;
 }
 
@@ -172,7 +175,7 @@ h1 span {
         margin: 0 0 48px;
         width: 445px;
     }
-    .emailSubForm {
+    .emailSubWrapper {
         width: 445px;
         height: 55px;
     }
@@ -181,7 +184,6 @@ h1 span {
     }
     .emailSubBtn {
         width: 100px;
-        transform: translateX(-100px);
         box-shadow: 0px 15px 20px lightgrey;
     }
     .emailSubBtn:hover {
