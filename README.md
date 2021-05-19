@@ -26,6 +26,7 @@
 - JS
 ### What I learned
 - `::placeholder` Pseudo Element
+- Form Validation
 
 ## Author
 - GitHub - [Kakamotobi](https://github.com/Kakamotobi)
