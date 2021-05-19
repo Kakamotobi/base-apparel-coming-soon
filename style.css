@@ -1,0 +1,196 @@
+:root {
+    /* Colors */
+    --desatRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+    --drkGreyRed: hsl(0, 6%, 24%);
+    /* Gradients */
+    --gradientOne: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --gradientTwo: linear-gradient(
+        135deg,
+        hsl(358, 85%, 92%),
+        hsl(0, 74%, 88%)
+    );
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+
+/* -----Nav----- */
+.navbar {
+    height: 80px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.homeLogo {
+    height: 23px;
+}
+.logo {
+    height: 100%;
+}
+
+/* -----Hero----- */
+.mobileHero {
+    margin-bottom: 65px;
+}
+.desktopHero {
+    display: none;
+}
+
+/* -----Text----- */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 13px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+h1 span {
+    font-weight: 300;
+    color: var(--desatRed);
+}
+
+.desc {
+    margin: 0 38px 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--desatRed);
+}
+
+/* -----Form----- */
+.innerWrapper {
+    margin-bottom: 50px;
+}
+.emailSubForm {
+    width: 310px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+.emailSubInput {
+    width: inherit;
+    height: inherit;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    padding-left: 25px;
+}
+.emailSubInput::placeholder {
+    color: lightgrey;
+    font-family: "Josefin Sans", sans-serif;
+}
+.emailSubBtn {
+    width: 65px;
+    height: inherit;
+    background: var(--gradientOne);
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    transform: translateX(-65px);
+    cursor: pointer;
+}
+
+/* -----Error----- */
+
+.errorBorder {
+    border: 2px solid var(--softRed);
+}
+.errorIcon {
+    display: none;
+    position: absolute;
+    transform: translate(-140px, 15px);
+}
+.errorMsg {
+    display: none;
+    font-size: 13px;
+    color: var(--softRed);
+    margin-left: 30px;
+}
+
+/* -----Footer----- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* -----Desktop----- */
+@media screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(images/bg-pattern-desktop.svg);
+    }
+    .outerWrapper {
+        display: flex;
+    }
+    .wrapper {
+        margin-top: 30px;
+        margin-left: 160px;
+    }
+    .container {
+        align-items: flex-start;
+    }
+    .navbar {
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+    .homeLogo {
+        height: 35px;
+    }
+    .container {
+        text-align: left;
+    }
+    h1 {
+        font-size: 70px;
+        line-height: 1.1;
+    }
+    .desc {
+        font-size: 16px;
+        line-height: 2;
+        margin: 0 0 48px;
+        width: 445px;
+    }
+    .emailSubForm {
+        width: 445px;
+        height: 55px;
+    }
+    .emailSubInput::placeholder {
+        font-size: 16px;
+    }
+    .emailSubBtn {
+        width: 100px;
+        transform: translateX(-100px);
+        box-shadow: 0px 15px 20px lightgrey;
+    }
+    .emailSubBtn:hover {
+        background: var(--gradientTwo);
+        box-shadow: 0px 15px 20px rgb(185, 185, 185);
+    }
+    .mobileHero {
+        display: none;
+    }
+    .desktopHero {
+        display: block;
+    }
+}
