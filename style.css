@@ -115,11 +115,12 @@ h1 span {
 .errorIcon {
     display: none;
     position: absolute;
-    transform: translate(-140px, 15px);
+    transform: translate(-105px, 12px);
 }
 .errorMsg {
     display: none;
     font-size: 13px;
+    text-align: left;
     color: var(--softRed);
     margin-left: 30px;
 }
@@ -186,6 +187,9 @@ h1 span {
     .emailSubBtn:hover {
         background: var(--gradientTwo);
         box-shadow: 0px 15px 20px rgb(185, 185, 185);
+    }
+    .errorIcon {
+        transform: translate(-140px, 15px);
     }
     .mobileHero {
         display: none;
