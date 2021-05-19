@@ -27,6 +27,7 @@
 ### What I learned
 - `::placeholder` Pseudo Element
 - Form Validation
+- Placing button "inside" `input` field
 
 ## Author
 - GitHub - [Kakamotobi](https://github.com/Kakamotobi)
