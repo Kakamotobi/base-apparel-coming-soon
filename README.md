@@ -26,7 +26,9 @@
 - JS
 ### What I learned
 - `::placeholder` Pseudo Element
-- Form Validation
+- Email Validation
+  - Regex test
+  - form `novalidate` attribute
 - Placing button "inside" `input` field
 
 ## Author
