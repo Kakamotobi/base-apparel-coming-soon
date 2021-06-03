@@ -17,7 +17,7 @@
   - The `input` field is empty.
   - The email address is not formatted correctly.
 ### Links
-  - Live Site URL: 
+  - Live Site URL: https://base-apparel-coming-soon-phi-nine.vercel.app/
 
 ## My Process
 ### Built With
